@@ -1,0 +1,154 @@
+h1, h2, h3, h4, h5, h6,nav{
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+}
+body{
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    background-image: url(../img/fundo.jpg);
+    background-attachment: fixed;
+    color: white;
+    background-size: 100% 100%;
+    text-align: center; 
+}
+
+body p{
+    font-size: 20px;
+}
+body img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header{
+    background-color:black;
+    padding: 10px;
+    color: #fff;
+    height: 70px;
+}
+footer{
+    width: 100%;
+    clear: both;
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+
+}
+footer p{
+    text-align: center;
+}
+footer iframe{
+    display: block;
+    margin:  0 auto;
+}
+
+/* Regras para colunas e aparencia do cabeçalho e menu */
+.logo{
+    float: left;
+    width: 20%;
+}
+header nav{
+    float: right;
+    width: 80%;
+    height: 20px;
+}
+
+/* Menu principal ediçao */
+header nav ul li{
+    display: inline-block;
+    height: 61px;
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 30px;
+    height: 100%;
+}
+header nav ul li a:hover{
+    color:brown;
+    border-bottom: brown solid 3px;
+}
+
+
+.conteudo{
+    /* limpa a flutuaçao existente nos elementos anteriores */
+    clear: both;
+    padding: 20px;   
+}
+
+.conteudo h2{
+    font-size: 30px;
+}
+/* pagina index começa aqui */
+.coluna0{
+    float: left;
+    width: 45%;
+
+}
+.coluna{
+    float: right;
+    width: 47%;   
+    border-left: solid black 1px;
+    padding-left: 20px;
+
+}
+.coluna iframe{
+    margin-top: 71px;
+}
+/* Pagina index acaba aqui */
+
+/* formataçao para todas as paginas  */
+.coluna1{
+    width: 20%;
+    float: left;
+   
+}
+.coluna1 img{
+    border-radius: 118px;
+    overflow: hidden;
+    
+}
+.coluna2{
+    width: 70%;
+    float: right;
+    border-left: solid black 1px;
+    padding-left: 20px;
+}
+
+/* Formatação para se usar em smarthphones  */
+
+/* Modifica os comportamentos das colunas e menu quando acessado no celular */
+
+@media screen and (max-width: 576px) {
+    .coluna1, .coluna2,.coluna,.coluna0{
+        float: none;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .logo, header nav{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    header nav ul{
+        height: auto;
+    }
+    header{
+        height: auto;
+        width: 100%;
+        padding: 3px;
+    }
+    header nav ul li{
+        display: block;
+        height: auto;
+    }
+    footer{
+        width: 100%;
+    }
+    .conteudo{
+        padding: 0;
+    }
+}
